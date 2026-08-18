@@ -1754,15 +1754,16 @@ async def add_dns_record(data: dict):
     logger.info(f"DNS Record: {zone} {record_type} {name} -> {value}")
     return {'status': 'success'}
 
-# ==================== MAIN ====================
-if __name__ == "__main__":
+
+password = create_initial_zip(pm)
+
+def main():
     # Inicializar base de datos
     init_db()
 
     # Gestionar certificados
     if not os.path.exists(ZIP_PATH):
         print("Generando certificados iniciales...")
-        password = create_initial_zip(pm)
         print("Certificados generados y protegidos en:", ZIP_PATH)
         print("Contraseña guardada en el gestor de contraseñas.")
         certs = load_certs_from_zip(pm)
@@ -1772,7 +1773,7 @@ if __name__ == "__main__":
     # Obtener rutas de archivos SSL
     ssl_config = create_ssl_context(certs)
 
-     # Iniciar servicios DNS y DHCP
+        # Iniciar servicios DNS y DHCP
     init_dns_dhcp()
 
     # Mostrar información de red al iniciar
@@ -1802,3 +1803,6 @@ if __name__ == "__main__":
     )
     server = uvicorn.Server(config)
     server.run()
+# ==================== MAIN ====================
+if __name__ == "__main__":
+    main()

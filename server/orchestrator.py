@@ -29,7 +29,7 @@ class Orchestrator:
         for finder, name, ispkg in pkgutil.iter_modules(modules.__path__):
             if name.startswith('_') or name == 'module_base':
                 continue
-            module = importlib.import_module('.' + name, package='modules')
+            module = importlib.import_module("." + name, package='modules')
             for attr in dir(module):
                 cls = getattr(module, attr)
                 if isinstance(cls, type) and issubclass(cls, Module) and cls != Module:

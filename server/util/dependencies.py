@@ -3,7 +3,6 @@ from fastapi import Depends, HTTPException, status, Request
 from fastapi.security import OAuth2PasswordBearer
 from sqlalchemy.orm import Session
 from typing import Optional
-import re
 
 from database import get_db, User, UserRole
 from auth import verify_token

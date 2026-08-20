@@ -1,0 +1,58 @@
+{
+  "enable_packet_sniffer": true,
+  "packet_sniffer_config": {
+    "analyzer_interval": 200,
+    "detection_interval": 300,
+    "window_days": 7,
+    "min_samples": 50,
+    "contamination": 0.01
+  },
+  "enable_waf_module": true,
+  "waf_module_config": {
+    "analyzer_interval": 200,
+    "detection_interval": 300,
+    "window_days": 7,
+    "min_samples": 50,
+    "contamination": 0.01
+  },
+  "enable_honeypot": true,
+  "honeypot_config": {
+    "analyzer_interval": 200,
+    "detection_interval": 300,
+    "window_days": 7,
+    "min_samples": 50,
+    "contamination": 0.01
+  },
+  "enable_log_monitor": true,
+  "log_monitor_config": {
+    "analyzer_interval": 200,
+    "detection_interval": 300,
+    "window_days": 7,
+    "min_samples": 100,
+    "contamination": 0.01
+  },
+  "enable_ransomware_shield": true,
+  "ransomware_shield_config": {
+    "analyzer_interval": 200,
+    "detection_interval": 300,
+    "window_days": 7,
+    "min_samples": 100,
+    "contamination": 0.02
+  },
+  "enable_network_scanner": true,
+  "network_scanner_config": {
+    "analyzer_interval": 200,
+    "detection_interval": 600,
+    "window_days": 7,
+    "min_samples": 10,
+    "contamination": 0.01
+  },
+  "enable_integrity_checker": true,
+  "integrity_checker_config": {
+    "analyzer_interval": 200,
+    "detection_interval": 300,
+    "window_days": 7,
+    "min_samples": 100,
+    "contamination": 0.01
+  }
+}

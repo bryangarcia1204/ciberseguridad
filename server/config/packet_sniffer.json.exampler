@@ -1,0 +1,5 @@
+{
+    "method": "auto",
+    "verbose": true,
+    "analyze_traffic": true
+}

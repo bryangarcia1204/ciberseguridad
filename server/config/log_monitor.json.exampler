@@ -1,0 +1,6 @@
+{
+  "logfile": "I:/Windows/System32/LogFiles/Firewall/pfirewall.log",
+  "threshold": 500,
+  "time_window": 3,
+  "ban_duration": 300
+}

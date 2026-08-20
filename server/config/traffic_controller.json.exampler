@@ -1,0 +1,17 @@
+{
+  "local_networks": [
+    "192.168.53.0/24"
+  ],
+  "admin_port": 8433,
+  "waf_http_port": 80,
+  "waf_https_port": 80,
+  "whitelist_ips": [
+    "192.168.53.1",
+    "127.0.0.1"
+  ],
+  "web_ports": [80, 443, 8000, 8443],
+  "max_connections_per_ip": 100,
+  "block_suspicious_ips": true,
+  "scan_ports": true,
+  "cache_ttl": 60
+}

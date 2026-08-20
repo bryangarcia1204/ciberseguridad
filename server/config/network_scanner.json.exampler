@@ -1,0 +1,7 @@
+{
+  "scan_all_networks": true,
+  "interface": "Wi-Fi",
+  "timeout": 5,
+  "known_devices_file": "H:\\data\\known_devices.json",
+  "scan_interval": 60
+}

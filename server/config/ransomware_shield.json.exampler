@@ -1,0 +1,25 @@
+{
+  "directories": [
+    "I:\\",
+    "H:\\"
+  ],
+  "threshold": 100,
+  "window_seconds": 60,
+  "exclude_patterns": [
+    "*.tmp",
+    "*.log"
+  ],
+  "process_whitelist": [
+    "csrss.exe",
+    "svchost.exe",
+    "TrustedInstaller.exe",
+    "TiWorker.exe",
+    "MsMpEng.exe",
+    "chrome.exe",
+    "explorer.exe",
+    "MoUsoCoreWorker.exe",
+    "OneDrive.Sync.Service.exe"
+  ],
+  "scan_with_antivirus": true,
+  "backend_antivirus": "amsi"
+}

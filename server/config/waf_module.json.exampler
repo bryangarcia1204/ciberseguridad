@@ -1,0 +1,22 @@
+{
+  "host": "0.0.0.0",
+  "port": 80,
+  "default_backend": "https://127.0.0.1:8433",
+  "backends": {},
+  "backend_verify_ssl": false,
+  "backend_timeout": 30,
+  "allowed_backend_ips": [
+    "127.0.0.1",
+    "::1",
+    "192.168.0.0/24",
+    "192.168.0.0/16",
+    "10.0.0.0/8",
+    "172.16.0.0/12"
+  ],
+  "ssl_certfile": "H:\\server\\data\\certs\\cert.pem",
+  "ssl_keyfile": "H:\\server\\data\\certs\\key.pem",
+  "enable_sqli": true,
+  "enable_xss": true,
+  "enable_path_traversal": true,
+  "enable_cmd_injection": false
+}

@@ -1,0 +1,4 @@
+{
+  "retention_days": 30,
+  "interval": 86400
+}

@@ -1,0 +1,5 @@
+{
+    "domain": "ciberlab.security.lo",
+    "port": 53,
+    "waf_port": 80
+}
